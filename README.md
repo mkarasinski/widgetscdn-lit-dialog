@@ -1,1 +1,1 @@
-# widgetscdn-components
+# widgetscdn-lit-dialog
