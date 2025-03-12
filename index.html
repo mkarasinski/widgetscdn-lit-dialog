@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + Lit + TS</title>
+  <link rel="stylesheet" href="./src/index.css" />
+  <script type="module" src="/src/dialog.ts"></script>
+</head>
+
+<body>
+  <button id="openDialogBtn">Open Dialog</button>
+
+  <custom-dialog id="myDialog" title="Important Message">
+    This is your custom dialog content that will appear in the slot.
+    <p>You can add any HTML content here!</p>
+  </custom-dialog>
+
+  <script>
+    const dialogBtn = document.getElementById('openDialogBtn');
+    const dialog = document.getElementById('myDialog');
+    
+    dialogBtn.addEventListener('click', () => {
+      dialog.open = true;
+    });
+  </script>
+</body>
+
+</html>
